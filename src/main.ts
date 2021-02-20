@@ -1,8 +1,3 @@
-import { NestFactory } from '@nestjs/core';
-import { AppModule } from './app.module';
+import { chartSeriesExample } from './examples/chart-series.example';
 
-async function bootstrap() {
-  const app = await NestFactory.create(AppModule);
-  await app.listen(3000);
-}
-bootstrap();
+chartSeriesExample();
